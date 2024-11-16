@@ -20,6 +20,10 @@
         }
 
         .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             background-color: #fff;
             padding: 50px;
@@ -63,8 +67,13 @@
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
@@ -74,7 +83,9 @@
         <h1>We're Coming Soon!</h1>
         <p>Our website is under construction, but we are working hard to get it ready for you. Stay tuned!</p>
         <div class="loader"></div>
-        <p>If you have any inquiries, feel free to contact us at jduveen@planet.nl.</p>
+        <p>If you have any inquiries, feel free to contact us at 
+            <a href="mailto:jduveen@planet.nl" class="email">jduveen@planet.nl</a>.
+        </p>
     </div>
 </body>
 
