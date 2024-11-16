@@ -1,78 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Random Page</title>
+    <title>Website Under Construction</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
+
+        .container {
             text-align: center;
-            padding: 1rem;
-        }
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-        .box {
-            background-color: #e2e2e2;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 8px;
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
+            max-width: 600px;
             width: 100%;
         }
-        a {
-            color: #4CAF50;
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff5722;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .email {
+            font-size: 1em;
+            color: #2196f3;
             text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .email:hover {
+            text-decoration: underline;
+        }
+
+        .loader {
+            margin-top: 30px;
+            width: 50px;
+            height: 50px;
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #ff5722;
+            border-radius: 50%;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
 </head>
+
 <body>
-
-<header>
-    <h1>Welcome to My Random Page!</h1>
-</header>
-
-<main>
-    <div class="box">
-        <h2>Random Info</h2>
-        <p>This is a simple page with random content.</p>
-        <p>Here's a cool quote:</p>
-        <blockquote>"The only limit to our realization of tomorrow is our doubts of today." - Franklin D. Roosevelt</blockquote>
+    <div class="container">
+        <h1>We're Coming Soon!</h1>
+        <p>Our website is under construction, but we are working hard to get it ready for you. Stay tuned!</p>
+        <div class="loader"></div>
+        <p>If you have any inquiries, feel free to <a href="jduveen@planet.nl" class="email">contact us via email</a>.</p>
     </div>
-
-    <div class="box">
-        <h2>Fun Fact</h2>
-        <p>Did you know that honey never spoils? Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still edible!</p>
-    </div>
-
-    <div class="box">
-        <h2>Explore More</h2>
-        <p>Check out this <a href="https://www.random.org/" target="_blank">random number generator</a> for your next adventure!</p>
-    </div>
-</main>
-
-<footer>
-    <p>&copy; 2024 Random Page | <a href="https://www.example.com" target="_blank">Privacy Policy</a></p>
-</footer>
-
 </body>
+
 </html>
