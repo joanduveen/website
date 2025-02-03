@@ -23,7 +23,7 @@
       </div>
     </header>
 
-    <nav class="bg-[#bbdefb] py-2">
+    <nav class="bg-[#bbdefb] py-2 sticky top-0 z-50">
       <a href="#joan-duveen" class="mx-4 font-bold no-underline">Joan Duveen</a>
       <a href="#seminars" class="mx-4 font-bold no-underline"
         >Seminars/Webinars</a
@@ -33,7 +33,7 @@
       <a href="#contact" class="mx-4 font-bold no-underline">Contact</a>
     </nav>
 
-    <section id="joan-duveen" class="mx-5 lg:mx-10 p-5 text-left mt-10">
+    <section id="joan-duveen" class="mx-5 lg:mx-10 p-5 text-left mt-5">
       <div class="flex flex-col lg:flex-row items-center mb-2">
         <img
           src="images/joanduveen.jpg"
@@ -155,7 +155,7 @@
         <p class="mb-2"><strong>Date:</strong> May 30, 2025</p>
         <a
           href="https://www.tcm-kongress.de/en/programme/the-earthly-branch-hai.htm"
-          class="text-[#0e437f] font-semibold underline"
+          class="text-white font-semibold underline"
           >Learn More</a
         >
       </div>
@@ -259,16 +259,16 @@
     <section id="links" class="max-w-4xl mx-auto p-5">
       <h2 class="text-2xl font-bold mb-4">Video Links</h2>
       <p>
-        Check out my free videos on my
+        Check out Joan's free videos on
         <a
           href="https://www.youtube.com/@joanduveen2732"
           target="_blank"
           class="text-[#0e437f] font-bold underline"
-          >YouTube channel</a
+          >YouTube</a
         >
       </p>
       <p>
-        Buy my online seminars at
+        Buy Joan's online seminars at
         <a
           href="https://qiology.com.au/product-category/online-seminars/"
           target="_blank"
@@ -296,5 +296,29 @@
         &copy; 2025 Joan Duveen All Rights Reserved
       </p>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarHeight = document.querySelector("nav").offsetHeight;
+        const offset = 20;
+
+        document.querySelectorAll("nav a").forEach((anchor) => {
+          anchor.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+              const targetPosition =
+                targetElement.getBoundingClientRect().top + window.scrollY;
+              window.scrollTo({
+                top: targetPosition - navbarHeight - offset,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
