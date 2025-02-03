@@ -1,92 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joan Duveen</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: #333;
-        }
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans text-center bg-[#e0f7fa] m-0 p-0">
+    <header class="bg-[#0e437f] text-white shadow-md text-left">
+      <div class="container mx-auto flex items-center">
+        <img
+          src="images/logo.jpg"
+          alt="Joan Duveen Logo"
+          class="w-auto h-[100%] mr-4"
+        />
+        <div>
+          <h1 class="text-3xl font-bold leading-tight mb-2">Joan Duveen</h1>
+          <h2 class="text-1xl font-light tracking-wide uppercase">
+            Constitutional Stems and Branches Acupuncture
+          </h2>
+        </div>
+      </div>
+    </header>
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background-color: #fff;
-            padding: 50px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: 100%;
-        }
+    <nav class="bg-[#bbdefb] py-2">
+      <a href="#joan-duveen" class="mx-4 text-black font-bold no-underline"
+        >Joan Duveen</a
+      >
+      <a href="#seminars" class="mx-4 text-black font-bold no-underline"
+        >Seminars/Webinars</a
+      >
+      <a href="#book" class="mx-4 text-black font-bold no-underline">Book</a>
+      <a href="#links" class="mx-4 text-black font-bold no-underline"
+        >Video Links</a
+      >
+      <a href="#contact" class="mx-4 text-black font-bold no-underline"
+        >Contact</a
+      >
+    </nav>
 
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #ff5722;
-        }
+    <section id="joan-duveen" class="mx-5 lg:mx-10 p-5 text-left mt-10">
+      <div class="flex flex-col lg:flex-row items-center mb-2">
+        <img
+          src="images/joanduveen.jpg"
+          alt="Joan Duveen"
+          class="w-[90%] lg:w-[22%] h-auto object-cover mr-4 mb-4 lg:mb-0"
+        />
 
-        p {
-            font-size: 1.2em;
-            color: #555;
-        }
+        <div class="flex flex-col">
+          <p class="mb-2">
+            Joan Duveen, originally trained as a physiotherapist worked in his
+            own private clinic in the Netherlands until August 2024 after which
+            he retired from treating patients. He continues to write and teach.
+          </p>
+          <p class="mb-2">
+            Because he was interested in both physical work and philosophy, in
+            1975 he heard about Dr. van Buren who taught acupuncture based on
+            Chinese philosophy. Since there was a long waiting list for this
+            course, he began studying Chinese medicine first with Chinese
+            massage and later acupuncture with other teachers. Together with Jan
+            van Baarle he wrote a study book:
+            <i>Chinese massage for physiotherapists.</i>
+          </p>
+          <p class="mb-2">
+            Graduated from the Dutch Society for Acupuncture, Holland in 1982,
+            he finally was able to study with Dr. van Buren in the Netherlands
+            and became B.Ac in 1986 at ICOM Holland.
+          </p>
+          <p class="mb-2">
+            At the end of this study, he had the rare honour to be invited by
+            Dr. van Buren to study with him in the UK for a M.Ac., which he
+            finalized in 1991 at ICOM England.
+          </p>
+          <p class="mb-2">
+            He became a regular staff member at the International College of
+            Oriental Medicine UK for 16 years, teaching Chinese Medicine in year
+            3 and 4. During these years, and later till Dr. van Buren died, Joan
+            was able to visit him often, to observe his treatments and to learn
+            as much as possible and to exchange ideas.
+          </p>
+        </div>
+      </div>
 
-        .email {
-            font-size: 1em;
-            color: #2196f3;
-            text-decoration: none;
-            margin-top: 20px;
-            display: inline-block;
-        }
-
-        .email:hover {
-            text-decoration: underline;
-        }
-
-        .loader {
-            margin-top: 30px;
-            width: 50px;
-            height: 50px;
-            border: 6px solid #f3f3f3;
-            border-top: 6px solid #ff5722;
-            border-radius: 50%;
-            animation: spin 2s linear infinite;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <h1>We're Coming Soon!</h1>
-        <p>Our website is under construction, but we are working hard to get it ready for you. Stay tuned!</p>
-        <div class="loader"></div>
-        <p>If you have any inquiries, feel free to contact us at 
-            <a href="mailto:jduveen@planet.nl" class="email">jduveen@planet.nl</a>
+      <div>
+        <p class="mb-2">
+          Joan sees it as his task to keep the legacy of the work of Dr. van
+          Buren alive, which is the practical use of Chinese philosophy in the
+          acupuncture clinic. The core of the work of Dr. van Buren is found in
+          the philosophy of the heavenly stems and earthly branches, a subject
+          which was theoretical for many years, even in China. Dr. van Buren's
+          work was to focus on the practical use of the philosophical ideas of
+          the Chinese calendar in the acupuncture clinic.
         </p>
-    </div>
-</body>
+        <p class="mb-2">
+          Since 1987 Joan is an international teacher in this subject which
+          brought him, besides the Netherlands to schools and congresses in
+          England, Germany, Israel, Norway, Australia, and Poland. Being a
+          husband, father, and grandfather, he chose to refuse several requests
+          from schools in other countries.
+        </p>
+        <p class="mb-2">
+          He is co-founder of the Study centre Pakua (1988). He resigned as
+          chairman after 13 years being convinced that the objectives continue
+          to be propagated. This study centre still organizes post graduate
+          courses in Philosophical Chinese medicine.
+        </p>
+        <p class="mb-2">
+          In 1992 he had the chance to travel to China with a group of
+          colleagues and Dr. van Buren and his wife and colleague Pauline to
+          visit Colleges of Traditional Chinese Medicine in Beijing, Chengdu,
+          Hong Kong, and Shanghai. His specialties in the field of acupuncture
+          are paediatrics (he studied with Julien Scott), pulse diagnosis
+          (studied with Dr. van Buren and Dr. L. Hammer and others), acupuncture
+          according to the five elements and the philosophy of stems and
+          branches, considering the constitutional energies at birth, based on
+          the Chinese calendar.
+        </p>
+        <p class="mb-2">
+          He wrote several articles in journals on Chinese medicine on these
+          topics and published a book on the theoretical and practical
+          principles of treating according to the philosophy of heavenly stems
+          and earthly branches. In this book -
+          <i>Applying Stems and Branches in Clinical Practice</i> - he shares
+          his experience and understanding of this important but historically
+          often forgotten approach to acupuncture.
+        </p>
+        <p class="mb-2">
+          Joan reads widely and continues to study Chinese philosophy and
+          Chinese Medicine, especially the Yijing and its practical use in the
+          clinic. Since childhood, he has been accustomed to learning through
+          spiritual work and staying healthy through fitness, qi gong,
+          meditation, long walks and listening to music.
+        </p>
+        <p class="mb-2">
+          He is blissed with an active family life with his wife Marjolein, 4
+          children and 4 grandchildren.
+        </p>
+      </div>
+    </section>
 
+    <section id="seminars" class="mx-5 lg:mx-10 p-5">
+      <h2 class="text-3xl font-semibold text-center mb-8">Seminars/Webinars</h2>
+
+      <div
+        class="bg-white p-6 mb-6 rounded-xl shadow-lg transition-shadow duration-300 ease-in-out"
+      >
+        <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+          Pulse Diagnosis Intensive in the UK (Fully Booked)
+        </h3>
+        <p class="text-gray-600 mb-2">
+          <strong>Date:</strong> April 2nd - 6th, 2025
+        </p>
+      </div>
+
+      <div
+        class="bg-white p-6 mb-6 rounded-xl shadow-lg transition-shadow duration-300 ease-in-out"
+      >
+        <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+          Lecture at the TCM Congress in Rothenburg, Germany about the Earthly
+          Branch Hai and the San Jiao
+        </h3>
+        <p class="text-gray-600 mb-2"><strong>Date:</strong> May 30, 2025</p>
+        <a
+          href="images/book.jpeg"
+          class="text-[#0e437f] font-semibold no-underline hover:underline"
+          >Learn More</a
+        >
+      </div>
+
+      <div
+        class="bg-white p-6 mb-6 rounded-xl shadow-lg transition-shadow duration-300 ease-in-out"
+      >
+        <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+          Q&amp;A Webinar about chapters of my book
+          <i>Applying Stems and Branches Acupuncture in Clinical Practice</i>
+        </h3>
+        <p class="text-gray-600 mb-2">
+          <strong>Date:</strong> to be announced in the near future
+        </p>
+        <p class="text-gray-700 mb-4">
+          More information and how to register will follow here ASAP
+        </p>
+      </div>
+    </section>
+
+    <section id="book" class="mx-5 lg:mx-10 p-5">
+      <div class="flex flex-col lg:flex-row gap-10">
+        <div class="flex-1 text-left mb-4 lg:mb-0">
+          <img
+            src="https://pbs.twimg.com/media/FTOxuvrWQAAZ91U?format=jpg&name=4096x4096"
+            alt="Book cover"
+            class="w-auto h-[100%]"
+          />
+        </div>
+
+        <div class="flex-1 text-left">
+          <h3 class="text-xl font-bold">
+            Applying Stems and Branches Acupuncture in Clinical Practice
+          </h3>
+          <h4 class="text-lg font-medium">
+            Dynamic Dualities in Classical Chinese Medicine
+          </h4>
+          <p class="text-md font-light mb-2">Joan Duveen</p>
+          <p class="mb-2">
+            Joan Duveen's excellent introduction to the intricate macrocosmic
+            background sciences of Chinese medicine is cause for celebration.
+            His monograph on the Stems and Branch system of cyclical energy
+            calculation makes this once hermetic information approachable by
+            enriching it with a lifetime of clinical insights from a senior
+            practitioner of acupuncture. I highly recommend this book for every
+            student and practitioner of Chinese medicine! -
+            <i
+              >Heiner Fruehauf, PhD, LAc. Founding Professor, College of
+              Classical Chinese Medicine, National University of Natural
+              Medicine, Portland, Oregon</i
+            >
+          </p>
+          <p class="mb-2">
+            In a subject where written works are few, Joan Duveen's mature and
+            thoughtful book is a welcome addition to the literature. If you have
+            been curious about Stems and Branches acupuncture, but don't know
+            where to begin, this book provides an excellent entry point into
+            that world. -
+            <i
+              >Peter Firebrace FBAcC, acupuncturist, writer, lecturer, director
+              of Guan Academy, past principal of the International College of
+              Oriental Medicine (UK)</i
+            >
+          </p>
+          <p class="mb-2">
+            Classical acupuncture according to the philosophy of the heavenly
+            stems and earthly branches uses the fundamental, cyclical rhythms of
+            nature and life as a foundation for health and development. This
+            book is one of the first of its kind in the western world to offer a
+            practical and scholarly approach to applying this philosophy to
+            clinical practice. This handbook guides the practitioner into a
+            journey of better understanding of the self and provides the
+            theoretical background to be able to confidently diagnose and treat
+            patients accordingly. It links and offers invaluable insight into
+            the use of Chinese philosophy, psychology and pulse diagnosis.
+          </p>
+          <p class="mb-2">
+            Joan Duveen has worked in healthcare since 1972, has practiced
+            acupuncture in his private clinic since 1980 and teaches Chinese
+            philosophy and acupuncture internationally for almost 40 years. He
+            is inspired by his teacher and pioneer in this field Dr. J.D. van
+            Buren, who strongly advocated that medicine should be applied
+            philosophy. In this spirit Joan received the theoretical and
+            practical principles of treating according to the philosophy of
+            heavenly stems and earthly branches. In this book Joan shares his
+            experience and understanding of this approach.
+          </p>
+          <p><strong>ISBN:</strong> 9781787753709</p>
+          <p>
+            Publisher:
+            <a
+              href="https://uk.singingdragon.com/products/applying-stems-and-branches-acupuncture-in-clinical-practice?_pos=1&_sid=1e45a07cb&_ss=r"
+              class="text-[#0e437f] font-bold no-underline hover:underline"
+              >Singing Dragon</a
+            >
+            | Or purchase from other online options or your local bookstore
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="links" class="max-w-4xl mx-auto p-5">
+      <h2 class="text-2xl font-semibold mb-4">Video Links</h2>
+      <p>
+        Check out my
+        <a
+          href="https://www.youtube.com/@joanduveen2732"
+          target="_blank"
+          class="text-[#0e437f] font-bold no-underline hover:underline"
+          >YouTube channel</a
+        >
+      </p>
+      <p>
+        Watch my online seminars at
+        <a
+          href="https://qiology.com.au/product-category/online-seminars/"
+          target="_blank"
+          class="text-[#0e437f] font-bold no-underline hover:underline"
+          >Qiology Australia</a
+        >
+      </p>
+    </section>
+
+    <footer class="bg-[#0e437f] text-white py-5 mt-5 text-center">
+      <section id="contact" class="max-w-4xl mx-auto">
+        <div class="mb-4">
+          <h2 class="text-xl font-semibold">Contact</h2>
+          <p>
+            Email:
+            <a
+              href="mailto:jduveen@planet.nl"
+              class="text-[#bbdefb] font-bold no-underline hover:underline"
+              >jduveen@planet.nl</a
+            >
+          </p>
+        </div>
+      </section>
+      <p class="text-sm text-[#bbdefb] mt-5">
+        &copy; 2025 Joan Duveen All Rights Reserved
+      </p>
+    </footer>
+  </body>
 </html>
